@@ -93,7 +93,7 @@
     }
 
     .product {
-        @apply w-full md:max-w-none max-w-[167px] h-max lg:min-h-[476.5px] mt-2 bg-white dark:bg-zinc-600 shadow-normal rounded-xl flex flex-col justify-between xs:gap-2 gap-1 relative;
+        @apply w-full md:max-w-none h-max lg:min-h-[476.5px] mt-2 bg-white dark:bg-zinc-600 shadow-normal rounded-xl flex flex-col justify-between xs:gap-2 gap-1 relative justify-self-center;
     }
 
     .product .offer-present {
@@ -117,7 +117,7 @@
     }
 
     .product .price-text {
-        @apply text-teal-600 dark:text-emerald-500 text-xs text-nowrap;
+        @apply text-teal-600 dark:text-emerald-500 text-xs text-nowrap overflow-hidden;
     }
 
     .product .price-text>.price {
