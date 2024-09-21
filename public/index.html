@@ -1864,10 +1864,10 @@
   <div id="layer" class="w-screen h-screen fixed top-0 left-0 bg-black/40 z-30 hidden md:hidden backdrop-blur-[2px]">
   </div>
   <!-- --------------------------------------- Footer --------------------------------------- -->
-  <footer class="w-full h-max min-h-96 py-14 px-50 bg-black/40 backdrop-blur-md text-white">
+  <footer class="w-full h-max min-h-96 sm:py-14 pt-14 px-0 lg:px-30 xl:px-50 bg-black/40 backdrop-blur-md text-white">
     <div class="container flex flex-col gap-10">
 
-      <div class="w-full flex justify-between items-center">
+      <div class="w-full flex justify-between items-center  sm:flex-row gap-10 sm:gap-0 flex-col">
 
         <div class="flex gap-3 items-center h-max">
           <img src="./images/app-logo.png" alt="app.logo" class="w-16 h-auto">
@@ -1878,18 +1878,19 @@
         </div>
 
 
-        <div class="flex h-14 bg-slate-100/40 rounded-xl overflow-hidden">
-          <input type="search" name="search" id="search" placeholder="محصول مورد نظر خود را جستجو کنید "
-            class="bg-transparent outline-none w-96 h-full px-6 placeholder:text-white/40" />
+        <div class="flex sm:h-14 h-10 bg-slate-100/40 rounded-xl overflow-hidden">
+          <input type="search" name="search" id="search" placeholder="دنبال چه میگردید ؟"
+            class="bg-transparent outline-none sm:w-96 h-full sm:px-6 px-3 placeholder:text-white/40 sm:text-base text-[10px]" />
           <button
-            class="h-full px-7 bg-orange-200 text-slate-800/50 hover:text-white hover:bg-orange-300 transition-colors text-lg font-arabic-Regular">جستجو</button>
+            class="h-full sm:px-7 px-3 bg-orange-200 text-slate-800/50 hover:text-white hover:bg-orange-300 transition-colors text-[10px] sm:text-lg font-arabic-Regular">جستجو</button>
         </div>
 
       </div>
 
-      <div class="flex justify-between">
+      <div class="flex sm:flex-row items-center gap-10 sm:gap-0 flex-col justify-between">
         <!-- ----------------- footer lists ----------------- -->
-        <div class="flex gap-10 items-start [&>ul]:space-y">
+        <div
+          class="flex gap-10 sm:items-start [&>ul]:space-y [&>ul>li]:text-sm [&>ul>li]:text-white/70  sm:flex-row flex-col sm:text-right text-center items-center">
           <ul class="[&>li]:transition-colors [&>li:hover]:text-orange-300">
             <h3 class="text-lg mb-2 font-arabic-bold">محصولات پرفروش</h3>
             <li>
@@ -1907,6 +1908,8 @@
           </ul>
 
           <ul class="[&>li]:transition-colors [&>li:hover]:text-orange-300">
+            <h3 class="text-lg mb-2 font-arabic-bold">مطالب دیگر</h3>
+
             <li>
               <a href="#">بلاگ</a>
             </li>
@@ -1919,7 +1922,7 @@
           </ul>
         </div>
         <!-- ------------ left side ------------ -->
-        <div class="flex gap-10 [&>div]:w-40">
+        <div class="flex gap-10 sm:[&>div]:w-40 [&>div]:w-20 mb-5 sm:mb-0">
           <div>
             <img src="images/footer/samandehi.png" alt="samandehi">
           </div>
@@ -1928,6 +1931,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </footer>
   <!-- -------------------- scripts -------------------- -->
