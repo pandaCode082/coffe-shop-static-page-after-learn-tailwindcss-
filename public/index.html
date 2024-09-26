@@ -1863,8 +1863,79 @@
   <!-- filter layer -->
   <div id="layer" class="w-screen h-screen fixed top-0 left-0 bg-black/40 z-30 hidden md:hidden backdrop-blur-[2px]">
   </div>
+  <!-- --------------------------------------- Footer --------------------------------------- -->
+  <footer class="w-full h-max min-h-96 sm:py-14 pt-14 px-0 lg:px-30 xl:px-50 bg-black/40 backdrop-blur-md text-white">
+    <div class="container flex flex-col gap-10">
+
+      <div class="w-full flex justify-between items-center  sm:flex-row gap-10 sm:gap-0 flex-col">
+
+        <div class="flex gap-3 items-center h-max">
+          <img src="./images/app-logo.png" alt="app.logo" class="w-16 h-auto">
+          <h2
+            class="font-Morabba-Bold text-5xl h-max bg-gradient-to-r from-orange-300 to-brown-300 bg-clip-text text-transparent">
+            قهوه پاندا
+          </h2>
+        </div>
+
+
+        <div class="flex sm:h-14 h-10 bg-slate-100/40 rounded-xl overflow-hidden">
+          <input type="search" name="search" id="search" placeholder="دنبال چه میگردید ؟"
+            class="bg-transparent outline-none sm:w-96 h-full sm:px-6 px-3 placeholder:text-white/40 sm:text-base text-[10px]" />
+          <button
+            class="h-full sm:px-7 px-3 bg-orange-200 text-slate-800/50 hover:text-white hover:bg-orange-300 transition-colors text-[10px] sm:text-lg font-arabic-Regular">جستجو</button>
+        </div>
+
+      </div>
+
+      <div class="flex sm:flex-row items-center gap-10 sm:gap-0 flex-col justify-between">
+        <!-- ----------------- footer lists ----------------- -->
+        <div
+          class="flex gap-10 sm:items-start [&>ul]:space-y [&>ul>li]:text-sm [&>ul>li]:text-white/70  sm:flex-row flex-col sm:text-right text-center items-center">
+          <ul class="[&>li]:transition-colors [&>li:hover]:text-orange-300">
+            <h3 class="text-lg mb-2 font-arabic-bold">محصولات پرفروش</h3>
+            <li>
+              <a href="#">قهوه زنبو برزیلی</a>
+            </li>
+            <li>
+              <a href="#">قهوه ویژه</a>
+            </li>
+            <li>
+              <a href="#">کپسول قهوه</a>
+            </li>
+            <li>
+              <a href="#">محصولات پر فروش</a>
+            </li>
+          </ul>
+
+          <ul class="[&>li]:transition-colors [&>li:hover]:text-orange-300">
+            <h3 class="text-lg mb-2 font-arabic-bold">مطالب دیگر</h3>
+
+            <li>
+              <a href="#">بلاگ</a>
+            </li>
+            <li>
+              <a href="#">درباره ما</a>
+            </li>
+            <li>
+              <a href="#">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ------------ left side ------------ -->
+        <div class="flex gap-10 sm:[&>div]:w-40 [&>div]:w-20 mb-5 sm:mb-0">
+          <div>
+            <img src="images/footer/samandehi.png" alt="samandehi">
+          </div>
+          <div>
+            <img src="images/footer/ENAMADpng.parspng.com_.png" alt="ENAMAD">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
   <!-- -------------------- scripts -------------------- -->
-  <script src="./js/script.js" defer></script>
+  <script src=" ./js/script.js" defer></script>
   <script src="./libs/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
